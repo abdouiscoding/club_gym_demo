@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i="title">Forge Athletic Club | Salle de sport et coaching</title>
+<link rel="icon" href="hero.svg" type="image/svg+xml">
+<meta name="description" content="Salle de sport, cours collectifs et inscription en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav"><div class="wrap nav-in">
+  <a href="#top" class="logo">Forge</a>
+  <nav id="menu"><a href="#plans" data-i="n1">Abonnements</a><a href="#planning" data-i="n2">Planning</a><a href="#join" data-i="n3">Inscription</a><a href="#contact" data-i="n4">Contact</a></nav>
+  <button class="lang" id="sw" role="switch" aria-checked="false" aria-label="Langue / اللغة"><span>FR</span><span>عربية</span><i></i></button>
+  <a href="#join" class="btn btn-sm" data-i="nb">Rejoindre</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap hero-in">
+  <div class="reveal">
+    <p class="eyebrow" data-i="h_e">Salle de sport et coaching</p>
+    <h1 data-i="h_h">Plus fort, chaque jour.</h1>
+    <p class="lead" data-i="h_l">Équipements récents, coachs certifiés et cours collectifs pour tous les niveaux. Inscrivez-vous en ligne en une minute.</p>
+    <div class="cta"><a class="btn" href="#join" data-i="h_b1">Commencer maintenant</a><a class="btn ghost" href="#planning" data-i="h_b2">Voir le planning</a></div>
+    <ul class="stats">
+      <li><b data-count="850">0</b><span data-i="s1">Membres actifs</span></li>
+      <li><b data-count="40">0</b><span data-i="s2">Cours par semaine</span></li>
+      <li><b data-count="12">0</b><span data-i="s3">Coachs certifiés</span></li>
+    </ul>
+  </div>
+  <div class="eq reveal d2" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div></section>
+<div class="strip" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="plans"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow" data-i="p_e">Abonnements</p><h2 data-i="p_h">Choisissez la formule qui vous convient</h2></div>
+  <div class="tog reveal" id="tog"><button class="on" data-b="m" data-i="b_m">Mensuel</button><button data-b="y" data-i="b_y">Annuel (2 mois offerts)</button></div>
+  <div class="plans">
+    <article class="plan reveal"><h3 data-i="pl1">Essentiel</h3>
+      <p class="pr"><b data-m="3000" data-y="2500">3 000</b> <span data-cur>DA</span> <small data-i="pm">/mois</small></p>
+      <ul><li data-i="a1">Accès à la salle</li><li data-i="a2">Vestiaires et douches</li><li data-i="a3">2 cours collectifs par semaine</li></ul>
+      <button class="btn ghost pick" data-plan="0" data-i="choose">Choisir cette formule</button></article>
+    <article class="plan feat reveal d1"><span class="pop" data-i="pop">Le plus demandé</span><h3 data-i="pl2">Performance</h3>
+      <p class="pr"><b data-m="4500" data-y="3750">4 500</b> <span data-cur>DA</span> <small data-i="pm">/mois</small></p>
+      <ul><li data-i="b1">Accès illimité à la salle</li><li data-i="b2">Cours collectifs illimités</li><li data-i="b3">1 séance de coaching par mois</li></ul>
+      <button class="btn pick" data-plan="1" data-i="choose">Choisir cette formule</button></article>
+    <article class="plan reveal d2"><h3 data-i="pl3">Elite</h3>
+      <p class="pr"><b data-m="7000" data-y="5800">7 000</b> <span data-cur>DA</span> <small data-i="pm">/mois</small></p>
+      <ul><li data-i="c1">Tout Performance inclus</li><li data-i="c2">Coaching personnalisé</li><li data-i="c3">Suivi nutritionnel</li></ul>
+      <button class="btn ghost pick" data-plan="2" data-i="choose">Choisir cette formule</button></article>
+  </div>
+</div></section>
+
+<section class="alt" id="planning"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow" data-i="sc_e">Planning</p><h2 data-i="sc_h">Réservez votre place en un clic</h2></div>
+  <div class="tabs reveal" id="tabs"><button class="on" data-day="0" data-d="0"></button><button data-day="1" data-d="1"></button><button data-day="2" data-d="2"></button><button data-day="3" data-d="3"></button><button data-day="4" data-d="4"></button><button data-day="5" data-d="5"></button></div>
+  <div id="rows" class="reveal d1"></div>
+</div></section>
+
+<section id="join"><div class="wrap join-in">
+  <div class="reveal"><p class="eyebrow" data-i="j_e">Inscription</p><h2 data-i="j_h">Rejoignez le club</h2><p class="lead" data-i="j_l">Laissez-nous vos coordonnées, nous vous appelons pour finaliser l’inscription. Premier cours d’essai offert.</p></div>
+  <div class="reveal d1">
+    <form id="form">
+      <label><span data-i="f_name">Nom complet</span><input id="name" required data-ph="name" placeholder="Votre nom"></label>
+      <label><span data-i="f_phone">Téléphone</span><input id="phone" type="tel" required placeholder="05 XX XX XX XX"></label>
+      <label><span data-i="f_plan">Formule</span><select id="plan"><option data-i="pl1">Essentiel</option><option data-i="pl2" selected>Performance</option><option data-i="pl3">Elite</option></select></label>
+      <label><span data-i="f_goal">Objectif</span><select id="goal"><option data-i="g1">Perdre du poids</option><option data-i="g2">Prendre du muscle</option><option data-i="g3">Améliorer ma condition physique</option></select></label>
+      <button class="btn full" data-i="f_go">Rejoindre le club</button>
+    </form>
+    <div class="msg" id="msg"></div>
+  </div>
+</div></section>
+
+<section class="alt" id="dashboard"><div class="wrap">
+  <div class="head reveal"><p class="eyebrow" data-i="d_e">Votre espace de gestion</p><h2 data-i="d_h">Gérez vos membres et vos cours en toute simplicité</h2><p data-i="d_p">Suivez les abonnements, les entrées du jour et le remplissage des cours, avec des rappels avant chaque expiration.</p></div>
+  <div class="mock reveal d1">
+    <div class="chrome"><i></i><i></i><i></i><span>app.forgeclub.dz</span></div>
+    <div class="app">
+      <aside class="side"><b>FC</b><a class="on" data-i="m1">Tableau de bord</a><a data-i="m2">Membres</a><a data-i="m3">Cours</a><a data-i="m4">Paiements</a><a data-i="m5">Réglages</a></aside>
+      <div class="main">
+        <div class="top"><h4 data-i="d_hi">Bonjour, Forge</h4><span class="av">FC</span></div>
+        <div class="kpis">
+          <div class="kpi"><small data-i="k1">Membres actifs</small><b>850</b><em>+6 %</em></div>
+          <div class="kpi"><small data-i="k2">Entrées aujourd’hui</small><b>87</b><em>+11 %</em></div>
+          <div class="kpi"><small data-i="k3">Réservations de cours</small><b>46</b><em>+4 %</em></div>
+          <div class="kpi"><small data-i="k4">Abonnements à renouveler</small><b>18</b><em>-2</em></div>
+        </div>
+        <div class="row2">
+          <div class="panel"><h5 data-i="ch_t">Fréquentation des 7 derniers jours</h5>
+            <div class="bars"><span style="--h:62%"><em data-d="0"></em></span><span style="--h:70%"><em data-d="1"></em></span><span style="--h:55%"><em data-d="2"></em></span><span style="--h:78%"><em data-d="3"></em></span><span style="--h:66%"><em data-d="4"></em></span><span class="hi" style="--h:94%"><em data-d="5"></em></span><span style="--h:48%"><em data-d="6"></em></span></div></div>
+          <div class="panel"><h5 data-i="tb_t">Derniers membres</h5>
+            <table><tr><th data-i="th1">Membre</th><th data-i="th2">Formule</th><th data-i="th3">Expire</th><th data-i="th4">Statut</th></tr>
+              <tr><td data-i="p1">Walid B.</td><td data-i="pl2">Performance</td><td>02/12</td><td><b class="pill ok" data-i="s_ac">Actif</b></td></tr>
+              <tr><td data-i="p2">Meriem S.</td><td data-i="pl1">Essentiel</td><td>20/11</td><td><b class="pill wa" data-i="s_rn">À renouveler</b></td></tr>
+              <tr><td data-i="p3">Samir T.</td><td data-i="pl3">Elite</td><td>05/11</td><td><b class="pill rd" data-i="s_ex">Expiré</b></td></tr>
+              <tr><td data-i="p4">Hichem A.</td><td data-i="pl2">Performance</td><td>15/01</td><td><b class="pill ok" data-i="s_ac">Actif</b></td></tr></table></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="cap" data-i="d_c">Aperçu de l’interface. Votre version est adaptée à vos besoins.</p>
+</div></section>
+
+<footer id="contact"><div class="wrap foot"><span data-i="ft1">Forge Athletic Club, [Adresse], [Ville]</span><span data-i="ft2">[Téléphone] · [Instagram]</span><span data-i="ft3">Ouvert de 6h à 22h</span></div></footer>
+<script src="script.js"></script>
+</body></html>
